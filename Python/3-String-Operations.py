@@ -1132,14 +1132,29 @@ split_lines = multiline_string.splitlines()  # ['Hello', 'World', 'from', 'Pytho
 print(f"Split lines: {split_lines}")
 
 # swapcase() method to swap the case of each character in the string
-swapped_case = "Hello World".swapcase()  # 'hELLO wORLD
+# Explaination: The swapcase() method is used to swap the case of each character in a string.
+# It converts all uppercase characters to lowercase and all lowercase characters to uppercase.
+# Non-alphabetic characters (like numbers, symbols, and spaces) are left unchanged.
+# This method returns a new string and does not modify the original one.
+swapped_case = "Hello World".swapcase()  # 'hELLO wORLD'
 print(f"Swapped case: {swapped_case}")
 
 # title() method to convert the first character of each word to uppercase
+# Explaination: The title() method returns a "titlecased" version of the string.
+# This means that the first character of each word is converted to uppercase,
+# and all subsequent characters in the word are converted to lowercase.
+# Words are identified as sequences of letters separated by non-letter characters (like spaces or punctuation).
+# This method is useful for formatting headings, titles, or names.
 title_case = "hello world from python".title()  # 'Hello World From Python'
 print(f"Title case: {title_case}")  
 
 # zfill() method to pad a string with zeros on the left
+# Explaination: The zfill() method pads a string on the left with zeros ('0') to fill a specified width.
+# It takes one argument: the desired width of the final string.
+# If the original string's length is less than the specified width, it adds leading zeros.
+# If the length is already equal to or greater than the width, the original string is returned unchanged.
+# This method is sign-aware, meaning if the string starts with '+' or '-', the padding is applied after the sign.
+# It is useful for formatting fixed-width numeric strings, like serial numbers or time values.
 zero_filled = "42".zfill(5)  # '00042'
 print(f"Zero filled: '{zero_filled}'")
 
@@ -1165,4 +1180,3 @@ if string_c.lower() == string_d.lower():
 else:
     print(f"'{string_c}' is not equal to '{string_d}' (case-insensitive comparison)")
 # Output: 'Apple' is equal to 'apple' (case-insensitive comparison)
-
